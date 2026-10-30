@@ -1,0 +1,26 @@
+{
+  "name": "signal-to-meeting-engine",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {"type":"git","url":"https://github.com/W3V0RA/signal-to-meeting.git"},
+  "type": "module",
+  "description": "Evidence-led, human-approved outreach with safe offline defaults",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "node --env-file-if-exists=.env scripts/serve.mjs",
+    "worker": "node --env-file-if-exists=.env scripts/worker.mjs",
+    "doctor": "node --env-file-if-exists=.env scripts/doctor.mjs",
+    "verify": "node --env-file-if-exists=.env scripts/verify.mjs",
+    "reconcile": "node --env-file-if-exists=.env scripts/reconcile.mjs",
+    "backup": "node --env-file-if-exists=.env scripts/backup.mjs",
+    "demo": "node scripts/demo.mjs",
+    "test": "node --import ./tests/offline-guard.mjs --test tests/*.test.mjs",
+    "review": "node scripts/review.mjs",
+    "eval": "node scripts/evaluate.mjs",
+    "dashboard": "node scripts/dashboard.mjs",
+    "scan": "node scripts/scan.mjs",
+    "check": "npm test && npm run eval && npm run scan"
+  }
+}
