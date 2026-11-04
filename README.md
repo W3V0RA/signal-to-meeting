@@ -1,5 +1,7 @@
 # Signal-to-Meeting Engine
 
+> **Canonical public repository.** This is the only active home for development, issues, contributions, and releases. The original [`signal-to-meeting-engine`](https://github.com/W3V0RA/signal-to-meeting-engine) development repository is retired and retained for history. See [repository consolidation and migration guidance](docs/REPOSITORY_CONSOLIDATION.md).
+
 An open-source, locally operated business application for evidence-backed outreach, individual human review, follow-ups, replies and interest-led meetings. Business identity, offerings, research sources and operating policy are configurable.
 
 **Ready to install in send-disabled mode. Each business's live integration verification remains pending until genuine evidence is supplied.** Environment flags alone cannot activate sending. The installation also requires fresh authenticated sender/integration verification and separate human activation. Neither setup, the console nor the verification commands enable sending.
